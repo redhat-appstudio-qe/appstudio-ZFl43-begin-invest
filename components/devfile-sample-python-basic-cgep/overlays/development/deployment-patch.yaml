@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-cgep
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/devfile-sample-python-basic-cgep@sha256:9f79ac0cfe00fa6bbedf64b624fa8a66a5ac4d0f57f58301f9aaedcff5b510fe
+        name: my-python
+        resources: {}
+status: {}
